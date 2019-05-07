@@ -5,3 +5,5 @@
 * 2d Fourier Transform
 ### week 5
 * 2d Cosinus Transform
+### week 6
+* Optical Character Recognition
