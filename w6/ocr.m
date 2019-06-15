@@ -176,7 +176,7 @@ if(DI < min)
 end
 
 % Calculating Distance For Eight Directions
-function V = Uzaklik(I, dirX, dirY)
+function V = Distance(I, dirX, dirY)
     if (dirX == 1 && dirY == 0)
         i = 1;
         y = 100;
@@ -221,12 +221,12 @@ end
 % Creates Feature Vector
 function Y = V8(X)
     Y = zeros(1,8);
-    Y(1) = Uzaklik(X,1,0);
-    Y(2) = Uzaklik(X,-1,0);
-    Y(3) = Uzaklik(X,0,1);
-    Y(4) = Uzaklik(X,0,-1);
-    Y(5) = Uzaklik(X,-1,1);
-    Y(6) = Uzaklik(X,1,-1);
-    Y(7) = Uzaklik(X,1,1);
-    Y(8) = Uzaklik(X,-1,-1);
+    Y(1) = Distance(X,1,0);
+    Y(2) = Distance(X,-1,0);
+    Y(3) = Distance(X,0,1);
+    Y(4) = Distance(X,0,-1);
+    Y(5) = Distance(X,-1,1);
+    Y(6) = Distance(X,1,-1);
+    Y(7) = Distance(X,1,1);
+    Y(8) = Distance(X,-1,-1);
 end
